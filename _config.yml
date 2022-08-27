@@ -1,17 +1,17 @@
 # Site settings
-title: Harrsion Blog
-SEOTitle: Harrison Blog
+title: Harrsion LIANGBlog
+SEOTitle: Harrison LIANG Blog
 header-img: img/post-bg-desk.jpg
 email: liangjunhong17@mails.ucas.ac.cn
 description: "Rejoice in hope, patient in tribulation"
-keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
+keyword: "Harrison, LIANG, Harrison LIANG, Harrison's blog, LIANG's blog, Harrison LIANG's blog"
 url: "http://Skywalker-harrison.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/Skywalker-Harrison/Skywalker-Harrison.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "Rejoice in hope, patient in tribulation."
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

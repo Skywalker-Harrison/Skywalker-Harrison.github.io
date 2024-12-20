@@ -9,7 +9,7 @@ catalog: true
 tags:
 ---
 # Introduction
-O come o come Emmanuel是一首非常经典的圣诞颂诗，其原始歌曲是《Veni, veni, Emmanuel》。Veni是拉丁语，来，come. 此歌中文译名为《以马内利恩主降临》
+O come o come Emmanuel是一首非常经典的圣诞颂诗，其原始歌曲是《Veni, veni, Emmanuel》。Veni是拉丁语，来，come. 此歌中文译名为《以马内利恩主降临》。值此圣诞佳节，让我们一同来庆祝
 
 下面附上此歌不同语言的翻译
 

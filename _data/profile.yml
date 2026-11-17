@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------------------
 
 name: "Junhong (Harrison) Liang"
-avatar: /img/oreki.jpg
+avatar: /img/avatar-junhong.jpg
 role: "Ph.D. student in Natural Language Processing"
 affiliation: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi"
 motto: "Rejoice in hope, patient in tribulation."
@@ -135,20 +135,25 @@ theses:
 education:
   - degree: "Ph.D. student in Natural Language Processing"
     place: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi, UAE"
+    logo: /img/logos/mbzuai.jpg
     period: "2025.08 – Present"
   - degree: "M.Eng. in Pattern Recognition and Intelligent Systems"
     place: "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+    logo: /img/logos/cas.png
     period: "2022.08 – 2025.07"
   - degree: "B.S. in Physics, minor in Mathematics"
     place: "University of Chinese Academy of Sciences (UCAS), Beijing, China"
+    logo: /img/logos/ucas.png
     period: "2017.09 – 2022.07"
   - degree: "Exchange student in Physics"
     place: "University of California, Berkeley, USA"
+    logo: /img/logos/berkeley.png
     period: "2020.01 – 2020.05"
 
 experience:
   - role: "Ph.D. researcher"
     place: "MBZUAI"
+    logo: /img/logos/mbzuai.jpg
     period: "2025.08 – Present"
     detail: "Low-resource NLP, cultural alignment of Arabic language models, and NLP for education."
   - role: "Multilingual TTS algorithm intern"
@@ -157,10 +162,12 @@ experience:
     detail: "Controllable text-to-speech: speaking-rate control and voice cloning; pruning small language models for edge devices."
   - role: "Graduate researcher"
     place: "Institute of Automation, Chinese Academy of Sciences"
+    logo: /img/logos/cas.png
     period: "2023.08 – 2025.05"
     detail: "Chinese spelling and splitting error correction, ASR N-best error correction."
   - role: "Audio algorithm research intern"
     place: "SenseTime, Beijing"
+    logo: /img/logos/sensetime.png
     period: "2024.06 – 2024.11"
     detail: "Audio quality filtering, concurrent speaker counting, and large-scale multilingual speech and text data processing."
   - role: "Algorithm research intern"
@@ -169,8 +176,26 @@ experience:
     detail: "Post-ASR correction under given instruction sets."
   - role: "Research assistant"
     place: "Institute of Acoustics, Chinese Academy of Sciences"
+    logo: /img/logos/cas.png
     period: "2021.07 – 2022.06"
     detail: "Adaptive feedback cancellation for hearing aids, supervised by Prof. Chengshi Zheng."
+
+# Language proficiency tests.
+languages:
+  - language: "English"
+    test: "TOEFL iBT"
+    score: "107 / 120"
+    detail: "Reading 27 · Listening 30 · Speaking 23 · Writing 27"
+  - language: "French"
+    test: "DELF B2"
+    score: "Passed · 55.5 / 100"
+  - language: "Japanese"
+    test: "JLPT N2"
+    score: "Passed · 134 / 180"
+    detail: "Language Knowledge 40 · Reading 60 · Listening 34"
+  - language: "Esperanto"
+    test: "UEA KER B2 (Writing)"
+    score: "Passed · 36.25 / 60"
 
 awards:
   - year: "2024"

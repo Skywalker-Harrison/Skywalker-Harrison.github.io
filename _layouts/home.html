@@ -102,9 +102,10 @@
         {% if p.experience.size > 0 %}
         <section id="experience">
             <h2>Experience</h2>
-            <ul class="rows">
+            <ul class="rows with-logo">
                 {% for e in p.experience %}
                 <li>
+                    {% if e.logo %}<span class="logo"><img src="{{ e.logo | prepend: site.baseurl }}" alt="" loading="lazy"></span>{% else %}<span class="logo mono" aria-hidden="true">{{ e.place | slice: 0 }}</span>{% endif %}
                     <span class="when">{{ e.period }}</span>
                     <span class="what"><strong>{{ e.role }}</strong>, {{ e.place }}{% if e.detail and e.detail != "" %}<br><span class="detail">{{ e.detail }}</span>{% endif %}</span>
                 </li>
@@ -116,11 +117,26 @@
         {% if p.education.size > 0 %}
         <section id="education">
             <h2>Education</h2>
-            <ul class="rows">
+            <ul class="rows with-logo">
                 {% for e in p.education %}
                 <li>
+                    {% if e.logo %}<span class="logo"><img src="{{ e.logo | prepend: site.baseurl }}" alt="" loading="lazy"></span>{% else %}<span class="logo mono" aria-hidden="true">{{ e.place | slice: 0 }}</span>{% endif %}
                     {% if e.period and e.period != "" %}<span class="when">{{ e.period }}</span>{% endif %}
                     <span class="what"><strong>{{ e.degree }}</strong><br>{{ e.place }}{% if e.detail and e.detail != "" %}<br><span class="detail">{{ e.detail }}</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if p.languages.size > 0 %}
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul class="rows">
+                {% for l in p.languages %}
+                <li>
+                    <span class="when">{{ l.language }}</span>
+                    <span class="what"><strong>{{ l.test }}</strong> — {{ l.score }}{% if l.detail %}<br><span class="detail">{{ l.detail }}</span>{% endif %}</span>
                 </li>
                 {% endfor %}
             </ul>

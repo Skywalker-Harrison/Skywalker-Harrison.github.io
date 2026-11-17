@@ -7,7 +7,9 @@ name: "Junhong (Harrison) Liang"
 avatar: /img/avatar-junhong.jpg
 role: "Ph.D. student in Natural Language Processing"
 affiliation: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi"
+motto_title: "This is my motto!"
 motto: "Rejoice in hope, patient in tribulation."
+motto_zh: "養怡神於望德、練弘毅於艱辛。"
 
 # Visitor map (mapmyvisitors.com). Paste the token from your embed code here:
 # it is the value after "d=" in  //mapmyvisitors.com/map.js?d=XXXX&cl=...

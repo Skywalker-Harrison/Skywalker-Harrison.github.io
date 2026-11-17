@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico?v=2">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
-    <link rel="stylesheet" href="{{ '/css/academic.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/academic.css' | prepend: site.baseurl }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 
@@ -39,10 +39,16 @@
             <li><a href="{{ l.href }}"{% unless l.href contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>
             {% endfor %}
         </ul>
-        {% if p.motto %}<p class="motto">{{ p.motto }}</p>{% endif %}
+        {% if p.motto %}
+        <div class="motto">
+            {% if p.motto_title %}<span class="side-label">{{ p.motto_title }}</span>{% endif %}
+            <p class="motto-text">{{ p.motto }}</p>
+            {% if p.motto_zh %}<p class="motto-zh" lang="zh-Hant">{{ p.motto_zh }}</p>{% endif %}
+        </div>
+        {% endif %}
         {% if p.visitor_map_token and p.visitor_map_token != "" %}
         <div class="visitors">
-            <span class="visitors-label">Visitors</span>
+            <span class="side-label">Visitors</span>
             <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d={{ p.visitor_map_token }}&cl=ffffff&w=a"></script>
         </div>
         {% endif %}

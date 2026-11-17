@@ -39,6 +39,12 @@
             {% endfor %}
         </ul>
         {% if p.motto %}<p class="motto">{{ p.motto }}</p>{% endif %}
+        {% if p.visitor_map_token and p.visitor_map_token != "" %}
+        <div class="visitors">
+            <span class="visitors-label">Visitors</span>
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d={{ p.visitor_map_token }}&cl=ffffff&w=a"></script>
+        </div>
+        {% endif %}
     </aside>
 
     <main>

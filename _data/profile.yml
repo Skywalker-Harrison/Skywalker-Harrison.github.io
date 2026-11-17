@@ -9,6 +9,11 @@ role: "Ph.D. student in Natural Language Processing"
 affiliation: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi"
 motto: "Rejoice in hope, patient in tribulation."
 
+# Visitor map (mapmyvisitors.com). Paste the token from your embed code here:
+# it is the value after "d=" in  //mapmyvisitors.com/map.js?d=XXXX&cl=...
+# Leave empty to hide the map.
+visitor_map_token: "8SKnoEAMNGPFrDF5bGndn-I6iS9GzZ2wRiXAxa2Ueeo"
+
 # Each item is one paragraph. HTML is allowed.
 bio:
   - >

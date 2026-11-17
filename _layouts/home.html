@@ -1,0 +1,163 @@
+{% assign p = site.data.profile %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ p.name }} — {{ p.role }}, {{ p.affiliation }}">
+    <meta name="keywords" content="{{ site.keyword }}">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <title>{{ p.name }}</title>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+    <link rel="stylesheet" href="{{ '/css/academic.css' | prepend: site.baseurl }}">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="wrap">
+        <a class="brand" href="{{ site.baseurl }}/">{{ p.name }}</a>
+        <nav>
+            <a href="#about">About</a>
+            {% if p.news.size > 0 %}<a href="#news">News</a>{% endif %}
+            {% if p.publications.size > 0 %}<a href="#publications">Publications</a>{% endif %}
+            <a href="{{ site.baseurl }}/blog/">Blog</a>
+        </nav>
+    </div>
+</header>
+
+<div class="wrap layout">
+
+    <aside class="profile">
+        {% if p.avatar %}<img class="avatar" src="{{ p.avatar | prepend: site.baseurl }}" alt="{{ p.name }}">{% endif %}
+        <h1>{{ p.name }}</h1>
+        <p class="role">{{ p.role }}</p>
+        <p class="affiliation">{{ p.affiliation }}</p>
+        <ul class="links">
+            {% for l in p.links %}
+            <li><a href="{{ l.href }}"{% unless l.href contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>
+            {% endfor %}
+        </ul>
+        {% if p.motto %}<p class="motto">{{ p.motto }}</p>{% endif %}
+    </aside>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            {% for para in p.bio %}<p>{{ para }}</p>{% endfor %}
+            {% if p.interests.size > 0 %}
+            <ul class="chips">
+                {% for i in p.interests %}<li>{{ i }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+        </section>
+
+        {% if p.news.size > 0 %}
+        <section id="news">
+            <h2>News</h2>
+            <ul class="rows">
+                {% for n in p.news %}
+                <li><span class="when">{{ n.date }}</span><span class="what">{{ n.text }}</span></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if p.publications.size > 0 %}
+        {% assign me_bold = p.me | prepend: '<strong>' | append: '</strong>' %}
+        <section id="publications">
+            <h2>Publications</h2>
+            <ol class="pubs">
+                {% for pub in p.publications %}
+                <li>
+                    <div class="pub-title">{{ pub.title }}</div>
+                    {% if pub.authors %}<div class="pub-authors">{{ pub.authors | replace: p.me, me_bold }}</div>{% endif %}
+                    <div class="pub-meta">
+                        <span class="venue">{{ pub.venue }}</span>
+                        {% if pub.note %}<span class="note">{{ pub.note }}</span>{% endif %}
+                        {% for l in pub.links %}<a href="{{ l.href }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+            {% if p.theses.size > 0 %}
+            <h3>Theses</h3>
+            <ul class="pubs plain">
+                {% for pub in p.theses %}
+                <li>
+                    <div class="pub-title">{{ pub.title }}</div>
+                    {% if pub.authors %}<div class="pub-authors">{{ pub.authors | replace: p.me, me_bold }}</div>{% endif %}
+                    <div class="pub-meta">
+                        <span class="venue">{{ pub.venue }}</span>
+                        {% if pub.note %}<span class="note">{{ pub.note }}</span>{% endif %}
+                        {% for l in pub.links %}<a href="{{ l.href }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if p.experience.size > 0 %}
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul class="rows">
+                {% for e in p.experience %}
+                <li>
+                    <span class="when">{{ e.period }}</span>
+                    <span class="what"><strong>{{ e.role }}</strong>, {{ e.place }}{% if e.detail and e.detail != "" %}<br><span class="detail">{{ e.detail }}</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if p.education.size > 0 %}
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="rows">
+                {% for e in p.education %}
+                <li>
+                    {% if e.period and e.period != "" %}<span class="when">{{ e.period }}</span>{% endif %}
+                    <span class="what"><strong>{{ e.degree }}</strong><br>{{ e.place }}{% if e.detail and e.detail != "" %}<br><span class="detail">{{ e.detail }}</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if p.awards.size > 0 %}
+        <section id="awards">
+            <h2>Awards</h2>
+            <ul class="rows">
+                {% for a in p.awards %}
+                <li><span class="when">{{ a.year }}</span><span class="what">{{ a.text }}</span></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if site.posts.size > 0 %}
+        <section id="blog">
+            <h2>Recent posts</h2>
+            <ul class="rows">
+                {% for post in site.posts limit: 4 %}
+                <li>
+                    <span class="when">{{ post.date | date: "%Y-%m" }}</span>
+                    <span class="what"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="more"><a href="{{ site.baseurl }}/blog/">All posts →</a></p>
+        </section>
+        {% endif %}
+    </main>
+</div>
+
+<footer class="wrap foot">
+    © {{ site.time | date: "%Y" }} {{ p.name }}
+</footer>
+
+</body>
+</html>

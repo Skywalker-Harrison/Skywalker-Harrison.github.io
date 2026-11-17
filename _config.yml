@@ -1,8 +1,8 @@
 # Site settings
-title: Harrsion LIANG Blog
-SEOTitle: Harrison Blog
+title: Harrison LIANG
+SEOTitle: Harrison LIANG
 header-img: img/post-bg-desk.jpg
-email: liangjunhong17@mails.ucas.ac.cn
+email: junhong.liang@mbzuai.ac.ae
 description: "Rejoice in hope, patient in tribulation"
 keyword: "Harrison, LIANG, Harrison LIANG, Harrison's blog, LIANG's blog, Harrison LIANG's blog"
 url: "http://Skywalker-harrison.github.io"          # your host, for absolute URL
@@ -32,6 +32,7 @@ github_username:    Skywalker-Harrison
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
+paginate_path: "/blog/page:num/"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 

@@ -1,0 +1,183 @@
+# ---------------------------------------------------------------------------
+# Content of the academic home page (index.html / _layouts/home.html).
+# Edit this file to update the page. A section whose list is empty is hidden.
+# ---------------------------------------------------------------------------
+
+name: "Junhong (Harrison) Liang"
+avatar: /img/oreki.jpg
+role: "Ph.D. student in Natural Language Processing"
+affiliation: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi"
+motto: "Rejoice in hope, patient in tribulation."
+
+# Each item is one paragraph. HTML is allowed.
+bio:
+  - >
+    Hi, I am <strong>Junhong (Harrison) Liang</strong>, a Ph.D. student in Natural Language
+    Processing at MBZUAI. My research focuses on low-resource languages, multicultural and
+    multimodal NLP, and AI safety. Recently I have been working on cultural alignment of
+    Arabic language models, grammatical error correction with pedagogical feedback, and
+    how LLMs handle closely related languages.
+  - >
+    Before MBZUAI, I received my master's degree in Pattern Recognition and Intelligent
+    Systems from the Institute of Automation, Chinese Academy of Sciences (中国科学院自动化研究所),
+    where I worked on Chinese spelling correction and ASR error correction, and my bachelor's
+    degree in Physics, with a minor in Mathematics, from the University of Chinese Academy of
+    Sciences (中国科学院大学).
+  - >
+    I am also a passionate foreign-language learner — English, French, Japanese, German and
+    Esperanto so far — and I write about languages, research and life on my
+    <a href="/blog/">blog</a>.
+
+interests:
+  - "Low-resource languages"
+  - "Multicultural NLP"
+  - "Multimodality"
+  - "AI safety"
+  - "Text & ASR error correction"
+
+links:
+  - label: "Email"
+    href: "mailto:junhong.liang@mbzuai.ac.ae"
+  - label: "Google Scholar"
+    href: "https://scholar.google.com/citations?user=DpMdkmwAAAAJ&hl=en"
+  - label: "GitHub"
+    href: "https://github.com/Skywalker-Harrison"
+  - label: "LinkedIn"
+    href: "https://www.linkedin.com/in/jhliangucas/"
+  - label: "Zhihu"
+    href: "https://www.zhihu.com/people/liang-jun-hong-46-90"
+  # - label: "CV"
+  #   href: "/files/cv.pdf"
+
+# news:
+#   - date: "2026-11"
+#     text: "One paper accepted to <strong>ACL 2027</strong>."
+news: []
+
+# Your own name, exactly as written in `authors`, is shown in bold.
+me: "Junhong Liang"
+# `authors`, `note` and `links` are optional.
+publications:
+  - title: "When Similar Means Different: Evaluating LLMs on Arabic–Hebrew Cognates"
+    authors: "Junhong Liang, Noor Abo Mokh, Bashar Alhafni"
+    venue: "EMNLP 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2606.13218"
+  - title: "ReViCo: Unveiling the Limitations of VLMs in Visual Text Understanding via Error Correction"
+    authors: "Bojun Zhang, Junhong Liang, Feifei Zhai, Fengxian Ji, Yu Zhou"
+    venue: "EMNLP 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2608.27154"
+  - title: "Aligning Cultural Behaviors in Arabic Language Models via Preferences"
+    authors: "Junhong Liang, Daniil Orel, Saeed Almheiri, Bilal Elbouardi, Younes Samih, Abed Alhakim Freihat, Zhuohan Xie, Momina Ahsan, Muhammad Dehan Al Kautsar, Sarfraz Ahmad, Omar El Herraoui, Mohamed Anwar, Preslav Nakov, Fajri Koto"
+    venue: "EMNLP 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2610.25362"
+  - title: "MedRoundsQA: A Persona and Difficulty Aware Evaluation for Multi-Turn Medical Consultations"
+    authors: "Youssef Mohamed, Ahmed Heakl, Qinrong Cui, Junhong Liang, Rafiq Ali, Bdour Babillie, Nazira Dunbayeva, Lang Gao, Omar Hussein, Ahmed Nada, Ahmed Mohamed Magdy Mohamed, Jinghui Liu, Salman Khan, Imran Razzak, Yuxia Wang, Xiuying Chen"
+    venue: "EMNLP 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2609.12851"
+  - title: "ComplexityMT: Benchmarking the Interaction Between Text Complexity and Machine Translation"
+    authors: "Joseph Marvin Imperial, Junhong Liang, Belal Shoer, Abdullah Barayan, Rodrigo Wilkens, Omar Mussa, Dawn Knight, Eugénio Ribeiro, Ekaterina Kochmar, Sowmya Vajjala, Fernando Alva-Manchego, Harish Tayyar Madabushi"
+    venue: "Findings of EMNLP 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2606.05421"
+  - title: "RAIR: Retrieval-Augmented Iterative Refinement for Chinese Spelling Correction"
+    authors: "Junhong Liang, Yu Zhou"
+    venue: "IJCNN 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2504.18938"
+  - title: "PERL: Pinyin Enhanced Rephrasing Language Model for Chinese ASR N-best Error Correction"
+    authors: "Junhong Liang, Bojun Zhang"
+    venue: "IJCNN 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2412.03230"
+  - title: "A Hybrid Approach towards Chinese Spelling and Splitting Error Correction"
+    authors: "Junhong Liang, Junnan Zhu, Feifei Zhai, Nanchang Cheng, Chengqing Zong, Yu Zhou"
+    venue: "ECAI 2024"
+    links:
+      - label: "Paper"
+        href: "https://dx.doi.org/10.3233/FAIA240952"
+  - title: "Listen, Correct, and Feed Back: Spoken Pedagogical Feedback Generation"
+    authors: "Junhong Liang, Yifan Lu, Ekaterina Kochmar, Fajri Koto"
+    venue: "arXiv preprint, 2026"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2604.14177"
+  - title: "An Analysis of Language Frequency and Error Correction for Esperanto"
+    authors: "Junhong Liang"
+    venue: "arXiv preprint, 2024"
+    links:
+      - label: "arXiv"
+        href: "https://arxiv.org/abs/2402.09696"
+
+theses:
+  - title: "Multi-Scenario Chinese Error Correction Methods Based on Chinese Character Features"
+    venue: "Master's thesis, Institute of Automation, Chinese Academy of Sciences, 2025 (in Chinese)"
+    links:
+      - label: "PDF"
+        href: "https://drive.google.com/file/d/1ONYmUyijsKZb4fWhXU20CC6UCzIhXYHW/view?usp=drive_link"
+  - title: "Acoustic Feedback Cancellation in Hearing Aids"
+    venue: "Bachelor's thesis, University of Chinese Academy of Sciences, 2022 (in Chinese)"
+    note: "Outstanding Undergraduate Thesis"
+    links:
+      - label: "PDF"
+        href: "https://drive.google.com/file/d/16Vw7jkCA0IJNc9n9O9V3lSHyAwzDz1gQ/view?usp=sharing"
+
+education:
+  - degree: "Ph.D. student in Natural Language Processing"
+    place: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi, UAE"
+    period: "2025.08 – Present"
+  - degree: "M.Eng. in Pattern Recognition and Intelligent Systems"
+    place: "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+    period: "2022.08 – 2025.07"
+  - degree: "B.S. in Physics, minor in Mathematics"
+    place: "University of Chinese Academy of Sciences (UCAS), Beijing, China"
+    period: "2017.09 – 2022.07"
+  - degree: "Exchange student in Physics"
+    place: "University of California, Berkeley, USA"
+    period: "2020.01 – 2020.05"
+
+experience:
+  - role: "Ph.D. researcher"
+    place: "MBZUAI"
+    period: "2025.08 – Present"
+    detail: "Low-resource NLP, cultural alignment of Arabic language models, and NLP for education."
+  - role: "Multilingual TTS algorithm intern"
+    place: "HojoAI, Beijing"
+    period: "2026.05 – 2026.07"
+    detail: "Controllable text-to-speech: speaking-rate control and voice cloning; pruning small language models for edge devices."
+  - role: "Graduate researcher"
+    place: "Institute of Automation, Chinese Academy of Sciences"
+    period: "2023.08 – 2025.05"
+    detail: "Chinese spelling and splitting error correction, ASR N-best error correction."
+  - role: "Audio algorithm research intern"
+    place: "SenseTime, Beijing"
+    period: "2024.06 – 2024.11"
+    detail: "Audio quality filtering, concurrent speaker counting, and large-scale multilingual speech and text data processing."
+  - role: "Algorithm research intern"
+    place: "Fanyu Co., Ltd., Beijing"
+    period: "2022.05 – 2022.08"
+    detail: "Post-ASR correction under given instruction sets."
+  - role: "Research assistant"
+    place: "Institute of Acoustics, Chinese Academy of Sciences"
+    period: "2021.07 – 2022.06"
+    detail: "Adaptive feedback cancellation for hearing aids, supervised by Prof. Chengshi Zheng."
+
+awards:
+  - year: "2024"
+    text: "National First Prize, FLTRP German Vlog Competition (6 of 670)"
+  - year: "2022"
+    text: "Outstanding Undergraduate Thesis, UCAS (4 of 62)"
+  - year: "2021"
+    text: "Third Prize, UCAS English Debate Competition"
+  - year: "2018 – 2021"
+    text: "UCAS Scholarships (Second Prize 2018, 2019; Third Prize 2020, 2021)"

@@ -145,6 +145,7 @@
         {% if p.languages.size > 0 %}
         <section id="languages">
             <h2>Languages</h2>
+            {% if p.languages_note %}<p>{{ p.languages_note }}</p>{% endif %}
             <ul class="rows">
                 {% for l in p.languages %}
                 <li>

@@ -189,12 +189,17 @@ experience:
     period: "2021.07 – 2022.06"
     detail: "Adaptive feedback cancellation for hearing aids, supervised by Prof. Chengshi Zheng."
 
-# Language proficiency tests.
+# Language proficiency tests. `languages_note` is shown above the list (optional).
+languages_note: "Languages are a part of my life. Beyond the tests below, I have also learned German, Spanish, Arabic and Hebrew."
 languages:
   - language: "English"
     test: "TOEFL iBT"
     score: "107 / 120"
     detail: "Reading 27 · Listening 30 · Speaking 23 · Writing 27"
+  - language: "English"
+    test: "GRE General"
+    score: "326 + 4.0"
+    detail: "Verbal 159 · Quantitative 167 · Analytical Writing 4.0"
   - language: "French"
     test: "DELF B2"
     score: "Passed · 55.5 / 100"

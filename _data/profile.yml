@@ -180,6 +180,7 @@ experience:
     detail: "Audio quality filtering, concurrent speaker counting, and large-scale multilingual speech and text data processing."
   - role: "Algorithm research intern"
     place: "Fanyu Co., Ltd., Beijing"
+    logo: /img/logos/fanyu.png
     period: "2022.05 – 2022.08"
     detail: "Post-ASR correction under given instruction sets."
   - role: "Research assistant"

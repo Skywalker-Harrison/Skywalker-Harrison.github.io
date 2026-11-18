@@ -142,7 +142,7 @@ theses:
 education:
   - degree: "Ph.D. student in Natural Language Processing"
     place: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Abu Dhabi, UAE"
-    logo: /img/logos/mbzuai.jpg
+    logo: /img/logos/mbzuai.png
     period: "2025.08 – Present"
   - degree: "M.Eng. in Pattern Recognition and Intelligent Systems"
     place: "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
@@ -150,7 +150,7 @@ education:
     period: "2022.08 – 2025.07"
   - degree: "B.S. in Physics, minor in Mathematics"
     place: "University of Chinese Academy of Sciences (UCAS), Beijing, China"
-    logo: /img/logos/ucas.png
+    logo: /img/logos/cas.png
     period: "2017.09 – 2022.07"
   - degree: "Exchange student in Physics"
     place: "University of California, Berkeley, USA"
@@ -160,11 +160,12 @@ education:
 experience:
   - role: "Ph.D. researcher"
     place: "MBZUAI"
-    logo: /img/logos/mbzuai.jpg
+    logo: /img/logos/mbzuai.png
     period: "2025.08 – Present"
     detail: "Low-resource NLP, cultural alignment of Arabic language models, and NLP for education."
   - role: "Multilingual TTS algorithm intern"
     place: "HojoAI, Beijing"
+    logo: /img/logos/hojoai.png
     period: "2026.05 – 2026.07"
     detail: "Controllable text-to-speech: speaking-rate control and voice cloning; pruning small language models for edge devices."
   - role: "Graduate researcher"

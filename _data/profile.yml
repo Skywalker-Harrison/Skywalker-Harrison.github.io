@@ -191,6 +191,8 @@ experience:
 
 # Teaching. `teaching_note` is shown above the list (optional).
 teaching_note: "I enjoy teaching."
+teaching_quote: "People’s beliefs about their abilities have a profound effect on those abilities."
+teaching_quote_by: "Albert Bandura, my favourite educationist"
 teaching:
   - period: "Present"
     text: "<strong>Teaching assistant</strong>, AI2100 Multivariable Calculus (undergraduate), MBZUAI"

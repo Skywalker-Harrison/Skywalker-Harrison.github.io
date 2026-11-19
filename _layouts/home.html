@@ -127,18 +127,6 @@
         </section>
         {% endif %}
 
-        {% if p.teaching.size > 0 %}
-        <section id="teaching">
-            <h2>Teaching</h2>
-            {% if p.teaching_note %}<p>{{ p.teaching_note }}</p>{% endif %}
-            <ul class="rows">
-                {% for t in p.teaching %}
-                <li><span class="when">{{ t.period }}</span><span class="what">{{ t.text }}</span></li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endif %}
-
         {% if p.service.size > 0 %}
         <section id="service">
             <h2>Academic Service</h2>
@@ -175,6 +163,24 @@
                     <span class="when">{{ l.language }}</span>
                     <span class="what"><strong>{{ l.test }}</strong> — {{ l.score }}{% if l.detail %}<br><span class="detail">{{ l.detail }}</span>{% endif %}</span>
                 </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if p.teaching.size > 0 %}
+        <section id="teaching">
+            <h2>Teaching</h2>
+            {% if p.teaching_note %}<p>{{ p.teaching_note }}</p>{% endif %}
+            {% if p.teaching_quote %}
+            <blockquote class="quote">
+                <p>“{{ p.teaching_quote }}”</p>
+                {% if p.teaching_quote_by %}<footer>— {{ p.teaching_quote_by }}</footer>{% endif %}
+            </blockquote>
+            {% endif %}
+            <ul class="rows">
+                {% for t in p.teaching %}
+                <li><span class="when">{{ t.period }}</span><span class="what">{{ t.text }}</span></li>
                 {% endfor %}
             </ul>
         </section>

@@ -45,7 +45,9 @@ a:hover { text-decoration: underline; }
     display: flex; align-items: center; justify-content: space-between;
     gap: 16px; height: 56px;
 }
-.brand { color: var(--text); font-weight: 600; white-space: nowrap; }
+.brand { color: var(--text); font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 10px; }
+.brand:hover { text-decoration: none; }
+.brand-logo { width: 28px; height: 28px; display: block; flex: 0 0 auto; }
 .topbar nav { display: flex; gap: 20px; overflow-x: auto; }
 .topbar nav a { color: var(--muted); font-size: 15px; white-space: nowrap; }
 .topbar nav a:hover { color: var(--accent); text-decoration: none; }

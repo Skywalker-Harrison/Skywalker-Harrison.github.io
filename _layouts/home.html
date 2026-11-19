@@ -127,6 +127,18 @@
         </section>
         {% endif %}
 
+        {% if p.teaching.size > 0 %}
+        <section id="teaching">
+            <h2>Teaching</h2>
+            {% if p.teaching_note %}<p>{{ p.teaching_note }}</p>{% endif %}
+            <ul class="rows">
+                {% for t in p.teaching %}
+                <li><span class="when">{{ t.period }}</span><span class="what">{{ t.text }}</span></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
         {% if p.education.size > 0 %}
         <section id="education">
             <h2>Education</h2>

@@ -189,6 +189,18 @@ experience:
     period: "2021.07 – 2022.06"
     detail: "Adaptive feedback cancellation for hearing aids, supervised by Prof. Chengshi Zheng."
 
+# Teaching. `teaching_note` is shown above the list (optional).
+teaching_note: "I enjoy teaching."
+teaching:
+  - period: "Present"
+    text: "<strong>Teaching assistant</strong>, AI2100 Multivariable Calculus (undergraduate), MBZUAI"
+  - period: "Previously"
+    text: "<strong>Part-time high school teacher</strong> of mathematics and physics"
+  - period: "2023.05"
+    text: "National Teacher Certificate (中国教师资格证) — High School Physics"
+  - period: "2022.07"
+    text: "National Teacher Certificate (中国教师资格证) — High School Mathematics"
+
 # Language proficiency tests. `languages_note` is shown above the list (optional).
 languages_note: "Languages are a part of my life. Beyond the tests below, I have also learned German, Spanish, Arabic and Hebrew."
 languages:

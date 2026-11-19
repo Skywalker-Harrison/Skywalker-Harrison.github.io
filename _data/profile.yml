@@ -199,9 +199,9 @@ teaching:
   - period: "Previously"
     text: "<strong>Part-time high school teacher</strong> of mathematics and physics"
   - period: "2023.05"
-    text: "National Teacher Certificate (中国教师资格证) — High School Physics"
+    text: "National Teacher Certificate (中国教师资格证) — High School Physics<br><span class=\"detail\">Credential ID 20231100141002609</span>"
   - period: "2022.07"
-    text: "National Teacher Certificate (中国教师资格证) — High School Mathematics"
+    text: "National Teacher Certificate (中国教师资格证) — High School Mathematics<br><span class=\"detail\">Credential ID 20221100141004276</span>"
 
 # Academic service.
 service:

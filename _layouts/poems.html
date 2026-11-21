@@ -1,0 +1,48 @@
+{% assign p = site.data.profile %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Poems — {{ p.name }}">
+    <title>Poems · {{ p.name }}</title>
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32.png?v=3">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico?v=3">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/poems/">
+    <link rel="stylesheet" href="{{ '/css/academic.css' | prepend: site.baseurl }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="wrap">
+        <a class="brand" href="{{ site.baseurl }}/"><img class="brand-logo" src="{{ site.baseurl }}/img/jl-logo.svg" alt="" width="28" height="28">{{ p.name }}</a>
+        <nav>
+            <a href="{{ site.baseurl }}/#about">About</a>
+            {% if p.publications.size > 0 %}<a href="{{ site.baseurl }}/#publications">Publications</a>{% endif %}
+            <a class="current" href="{{ site.baseurl }}/poems/" aria-current="page">Poems</a>
+            <a href="{{ site.baseurl }}/blog/">Blog</a>
+        </nav>
+    </div>
+</header>
+
+<main class="wrap poems">
+    <h1>Poems</h1>
+    {% for poem in site.data.poems %}
+    <article class="poem">
+        <h2 lang="{{ poem.lang }}">{{ poem.title }}</h2>
+        {% if poem.author %}<p class="poem-author">{{ poem.author }}</p>{% endif %}
+        <div class="poem-lines">
+            {% for l in poem.lines %}
+            <p class="poem-line"><span lang="{{ poem.lang }}">{{ l.text }}</span>{% if l.zh %}<span class="poem-zh" lang="zh-Hans">{{ l.zh }}</span>{% endif %}</p>
+            {% endfor %}
+        </div>
+    </article>
+    {% endfor %}
+</main>
+
+<footer class="wrap foot">
+    © {{ site.time | date: "%Y" }} {{ p.name }}
+</footer>
+
+</body>
+</html>

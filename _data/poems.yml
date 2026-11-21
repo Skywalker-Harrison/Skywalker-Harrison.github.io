@@ -1,0 +1,14 @@
+# Poems shown on /poems/. Each line has the original (`text`) and an optional
+# translation (`zh`). Add a new poem by copying a block.
+- title: "El Poemo de l' Plugisto"
+  author: "Ĥristo Gorov (Ĥrima)"
+  lang: "eo"
+  lines:
+    - text: "Animo flugas en libero,"
+      zh: "心灵在自由中飞翔，"
+    - text: "super la valoj, ripozanta tero,"
+      zh: "越过山谷，休憩的大地，"
+    - text: "min lulas sorĉa dorm' magia,"
+      zh: "魔力般的睡眠将我轻摇，"
+    - text: "kvietas pacaj kor' kaj korpo miaj."
+      zh: "我的心与身体安静平和。"

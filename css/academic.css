@@ -131,6 +131,20 @@ section h3 { font-size: 15px; margin: 26px 0 10px; }
 .venue { font-style: italic; }
 .note { background: var(--chip); border-radius: 4px; padding: 0 7px; }
 
+.topbar nav a.current { color: var(--text); }
+
+/* poems page */
+.poems { max-width: 680px; padding-top: 48px; padding-bottom: 48px; }
+.poems h1 { font-size: 28px; line-height: 1.3; margin: 0 0 36px; }
+.poem { margin-bottom: 56px; }
+.poem h2 { font: italic 600 22px/1.4 Georgia, "Times New Roman", "Songti SC", serif; margin: 0; }
+.poem-author { color: var(--muted); font-size: 15px; margin: 4px 0 22px; }
+.poem-lines { border-left: 3px solid var(--accent); padding-left: 20px; }
+.poem-line { margin: 0 0 14px; }
+.poem-line span { display: block; }
+.poem-line > span:first-child { font: 19px/1.6 Georgia, "Times New Roman", serif; }
+.poem-zh { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
 .foot {
     color: var(--muted); font-size: 13px;
     padding-top: 20px; padding-bottom: 40px;

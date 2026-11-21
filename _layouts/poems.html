@@ -38,7 +38,30 @@
         </div>
     </article>
     {% endfor %}
+    {% if site.data.poems.size > 1 %}<p class="poem-more" hidden><button type="button" id="poem-next">Another poem →</button></p>{% endif %}
 </main>
+
+<script>
+// Show one poem, picked at random on every visit; without JavaScript all poems are listed.
+(function () {
+    var poems = document.querySelectorAll('.poem');
+    if (poems.length < 2) return;
+    var current = -1;
+    function show(i) {
+        for (var k = 0; k < poems.length; k++) poems[k].hidden = k !== i;
+        current = i;
+    }
+    function pick() {
+        var i = Math.floor(Math.random() * poems.length);
+        if (i === current) i = (i + 1) % poems.length;
+        show(i);
+    }
+    pick();
+    var more = document.querySelector('.poem-more');
+    more.hidden = false;
+    document.getElementById('poem-next').addEventListener('click', pick);
+})();
+</script>
 
 <footer class="wrap foot">
     © {{ site.time | date: "%Y" }} {{ p.name }}

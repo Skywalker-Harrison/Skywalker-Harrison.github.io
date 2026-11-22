@@ -149,7 +149,7 @@ section h3 { font-size: 15px; margin: 26px 0 10px; }
     border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; cursor: pointer;
 }
 .poem-more button:hover { border-color: var(--accent); }
-.poem-zh { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.poem-tr { color: var(--muted); font-size: 15px; line-height: 1.6; }
 
 .foot {
     color: var(--muted); font-size: 13px;

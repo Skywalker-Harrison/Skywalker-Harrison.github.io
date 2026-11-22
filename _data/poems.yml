@@ -1,16 +1,20 @@
-# Poems shown on /poems/. Each line has the original (`text`) and an optional
-# translation (`zh`). Add a new poem by copying a block.
+# Poems shown on /poems/. Each line has the original (`text`) and optional
+# translations (`en`, `zh`). Add a new poem by copying a block.
 - title: "El Poemo de l' Plugisto"
   author: "Ĥristo Gorov (Ĥrima)"
   lang: "eo"
   lines:
     - text: "Animo flugas en libero,"
+      en: "The soul flies in freedom,"
       zh: "心灵在自由中飞翔，"
     - text: "super la valoj, ripozanta tero,"
+      en: "above the valleys, the resting earth,"
       zh: "越过山谷，休憩的大地，"
     - text: "min lulas sorĉa dorm' magia,"
+      en: "an enchanting, magical sleep lulls me,"
       zh: "魔力般的睡眠将我轻摇，"
     - text: "kvietas pacaj kor' kaj korpo miaj."
+      en: "my peaceful heart and body grow still."
       zh: "我的心与身体安静平和。"
 
 - title: "El Poemo de l' Plugisto"
@@ -18,10 +22,14 @@
   lang: "eo"
   lines:
     - text: "Mi dum vespero ŝatas kuŝi"
+      en: "In the evening I like to lie"
       zh: "傍晚时我喜欢躺下"
     - text: "sub la ĉielo. Povas min kortuŝi"
+      en: "beneath the sky. What can move me"
       zh: "在天空下。能打动我的"
     - text: "sur kamp' kavalo de l' ŝafisto,"
+      en: "is the shepherd's kaval in the field,"
       zh: "是田野上牧羊人的笛子，"
     - text: "kavalo mieldolĉa de l' ŝafisto."
+      en: "the shepherd's honey-sweet kaval."
       zh: "那蜜一般甘甜的牧笛。"

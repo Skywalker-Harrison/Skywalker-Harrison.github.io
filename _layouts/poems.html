@@ -27,8 +27,15 @@
 
 <main class="wrap poems">
     <h1>Poems</h1>
+    <div class="poem-langs" role="group" aria-label="Poem language" hidden>
+        <button type="button" data-lang="" aria-pressed="true">All</button>
+        {% assign langs = site.data.poems | map: "lang" | uniq %}
+        {% for code in langs %}
+        <button type="button" data-lang="{{ code }}" aria-pressed="false">{% case code %}{% when "eo" %}Esperanto{% when "en" %}English{% when "zh" %}中文{% when "fr" %}Français{% when "de" %}Deutsch{% when "ja" %}日本語{% when "es" %}Español{% when "ar" %}العربية{% when "he" %}עברית{% else %}{{ code }}{% endcase %}</button>
+        {% endfor %}
+    </div>
     {% for poem in site.data.poems %}
-    <article class="poem">
+    <article class="poem" data-lang="{{ poem.lang }}">
         <h2 lang="{{ poem.lang }}">{{ poem.title }}</h2>
         {% if poem.author %}<p class="poem-author">{{ poem.author }}</p>{% endif %}
         <div class="poem-lines">
@@ -42,24 +49,38 @@
 </main>
 
 <script>
-// Show one poem, picked at random on every visit; without JavaScript all poems are listed.
+// Show one poem, picked at random on every visit, within the chosen language.
+// Without JavaScript all poems are listed.
 (function () {
-    var poems = document.querySelectorAll('.poem');
+    var poems = Array.prototype.slice.call(document.querySelectorAll('.poem'));
     if (poems.length < 2) return;
-    var current = -1;
-    function show(i) {
-        for (var k = 0; k < poems.length; k++) poems[k].hidden = k !== i;
-        current = i;
+    var bar = document.querySelector('.poem-langs');
+    var buttons = Array.prototype.slice.call(bar.querySelectorAll('button'));
+    var more = document.querySelector('.poem-more');
+    var lang = '', current = null;
+    try { lang = localStorage.getItem('poem-lang') || ''; } catch (e) {}
+    if (!buttons.some(function (b) { return b.dataset.lang === lang; })) lang = '';
+    function pool() {
+        return poems.filter(function (el) { return !lang || el.dataset.lang === lang; });
     }
     function pick() {
-        var i = Math.floor(Math.random() * poems.length);
-        if (i === current) i = (i + 1) % poems.length;
-        show(i);
+        var list = pool();
+        if (list.length > 1) list = list.filter(function (el) { return el !== current; });
+        current = list[Math.floor(Math.random() * list.length)];
+        poems.forEach(function (el) { el.hidden = el !== current; });
+        more.hidden = pool().length < 2;
     }
-    pick();
-    var more = document.querySelector('.poem-more');
-    more.hidden = false;
+    function setLang(code) {
+        lang = code;
+        try { localStorage.setItem('poem-lang', code); } catch (e) {}
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === code)); });
+        current = null;
+        pick();
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
     document.getElementById('poem-next').addEventListener('click', pick);
+    bar.hidden = false;
+    setLang(lang);
 })();
 </script>
 

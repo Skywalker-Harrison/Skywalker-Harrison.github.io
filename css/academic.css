@@ -143,7 +143,14 @@ section h3 { font-size: 15px; margin: 26px 0 10px; }
 .poem-line { margin: 0 0 14px; }
 .poem-line span { display: block; }
 .poem-line > span:first-child { font: 19px/1.6 Georgia, "Times New Roman", serif; }
-.poem[hidden], .poem-more[hidden] { display: none; }
+.poem[hidden], .poem-more[hidden], .poem-langs[hidden] { display: none; }
+.poem-langs { display: flex; flex-wrap: wrap; gap: 8px; margin: -16px 0 36px; }
+.poem-langs button {
+    font: inherit; font-size: 14px; color: var(--muted); background: none;
+    border: 1px solid var(--line); border-radius: 999px; padding: 3px 14px; cursor: pointer;
+}
+.poem-langs button:hover { border-color: var(--accent); color: var(--accent); }
+.poem-langs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .poem-more button {
     font: inherit; font-size: 15px; color: var(--accent); background: none;
     border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; cursor: pointer;

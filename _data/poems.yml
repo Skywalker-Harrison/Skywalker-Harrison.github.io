@@ -71,3 +71,59 @@
     - text: "陳王昔時宴平樂，斗酒十千恣歡謔。"
     - text: "主人何為言少錢，徑須沽取對君酌。"
     - text: "五花馬，千金裘，呼兒將出換美酒，與爾同銷萬古愁。"
+
+# Haiku: three lines (5-7-5); the Chinese follows the same 5-7-5 count.
+- title: "古池や"
+  author: "松尾芭蕉"
+  lang: "ja"
+  lines:
+    - text: "古池や"
+      zh: "寂寂古池塘"
+    - text: "蛙飛びこむ"
+      zh: "青蛙一跃入水中"
+    - text: "水の音"
+      zh: "扑通一声响"
+
+- title: "閑さや"
+  author: "松尾芭蕉"
+  lang: "ja"
+  lines:
+    - text: "閑さや"
+      zh: "四下多寂静"
+    - text: "岩にしみ入る"
+      zh: "蝉声阵阵透岩石"
+    - text: "蝉の声"
+      zh: "渗入石中去"
+
+- title: "菜の花や"
+  author: "与謝蕪村"
+  lang: "ja"
+  lines:
+    - text: "菜の花や"
+      zh: "遍野菜花黄"
+    - text: "月は東に"
+      zh: "明月初升在东方"
+    - text: "日は西に"
+      zh: "落日正西沉"
+
+- title: "痩蛙"
+  author: "小林一茶"
+  lang: "ja"
+  lines:
+    - text: "痩蛙"
+      zh: "瘦弱小青蛙"
+    - text: "まけるな一茶"
+      zh: "千万不要认输啊"
+    - text: "是にあり"
+      zh: "一茶在这里"
+
+- title: "柿くへば"
+  author: "正岡子規"
+  lang: "ja"
+  lines:
+    - text: "柿くへば"
+      zh: "方才吃柿子"
+    - text: "鐘が鳴るなり"
+      zh: "忽闻钟声悠悠响"
+    - text: "法隆寺"
+      zh: "来自法隆寺"

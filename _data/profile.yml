@@ -126,18 +126,8 @@ publications:
       - label: "arXiv"
         href: "https://arxiv.org/abs/2402.09696"
 
-theses:
-  - title: "Multi-Scenario Chinese Error Correction Methods Based on Chinese Character Features"
-    venue: "Master's thesis, Institute of Automation, Chinese Academy of Sciences, 2025 (in Chinese)"
-    links:
-      - label: "PDF"
-        href: "https://drive.google.com/file/d/1ONYmUyijsKZb4fWhXU20CC6UCzIhXYHW/view?usp=drive_link"
-  - title: "Acoustic Feedback Cancellation in Hearing Aids"
-    venue: "Bachelor's thesis, University of Chinese Academy of Sciences, 2022 (in Chinese)"
-    note: "Outstanding Undergraduate Thesis"
-    links:
-      - label: "PDF"
-        href: "https://drive.google.com/file/d/16Vw7jkCA0IJNc9n9O9V3lSHyAwzDz1gQ/view?usp=sharing"
+# Theses (same fields as publications). Empty list hides the block.
+theses: []
 
 education:
   - degree: "Ph.D. student in Natural Language Processing"

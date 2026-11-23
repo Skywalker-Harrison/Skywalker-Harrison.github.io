@@ -197,12 +197,14 @@ teaching:
   - period: "2022.07"
     text: "National Teacher Certificate (中国教师资格证) — High School Mathematics<br><span class=\"detail\">Credential ID 20221100141004276</span>"
 
-# Academic service.
+# Academic service, grouped by year (newest first). Each year lists roles and venues.
 service:
-  - role: "Reviewer"
-    text: "ACL Rolling Review (ARR), October 2026 cycle"
-  - role: "Reviewer"
-    text: "IJCNN 2026"
+  - year: "2026"
+    items:
+      - role: "Reviewer"
+        text: "ACL Rolling Review (ARR), October 2026 cycle; IJCNN 2026"
+      - role: "Workshop reviewer"
+        text: "BEA 2026"
 
 # Language proficiency tests. `languages_note` is shown above the list (optional).
 languages_note: "Languages are a part of my life. Beyond the tests below, I have also learned German, Spanish, Arabic and Hebrew."

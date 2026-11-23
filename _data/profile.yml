@@ -59,7 +59,11 @@ links:
 # news:
 #   - date: "2026-11"
 #     text: "One paper accepted to <strong>ACL 2027</strong>."
-news: []
+news:
+  - date: "2026-11-28"
+    text: "Travelling to Hangzhou for the <strong>Komuna Seminario</strong>, where I will give a talk on NLP for Esperanto."
+  - date: "2026-11-27"
+    text: "Attending <strong>VK</strong>."
 
 # Your own name, exactly as written in `authors`, is shown in bold.
 me: "Junhong Liang"

@@ -40,7 +40,7 @@
         {% if poem.author %}<p class="poem-author">{{ poem.author }}</p>{% endif %}
         <div class="poem-lines">
             {% for l in poem.lines %}
-            <p class="poem-line"><span lang="{{ poem.lang }}">{{ l.text }}</span>{% if l.en %}<span class="poem-tr" lang="en">{{ l.en }}</span>{% endif %}{% if l.zh %}<span class="poem-tr" lang="zh-Hans">{{ l.zh }}</span>{% endif %}</p>
+            <p class="poem-line"><span lang="{{ poem.lang }}">{{ l.ruby | default: l.text }}</span>{% if l.en %}<span class="poem-tr" lang="en">{{ l.en }}</span>{% endif %}{% if l.zh %}<span class="poem-tr" lang="zh-Hans">{{ l.zh }}</span>{% endif %}</p>
             {% endfor %}
         </div>
     </article>

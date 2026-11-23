@@ -73,15 +73,19 @@
     - text: "五花馬，千金裘，呼兒將出換美酒，與爾同銷萬古愁。"
 
 # Haiku: three lines (5-7-5); the Chinese follows the same 5-7-5 count.
+# `ruby` is the same line with kana readings (furigana) marked up; it is shown instead of `text`.
 - title: "古池や"
   author: "松尾芭蕉"
   lang: "ja"
   lines:
     - text: "古池や"
+      ruby: '<ruby>古池<rt>ふるいけ</rt></ruby>や'
       zh: "寂寂古池塘"
     - text: "蛙飛びこむ"
+      ruby: '<ruby>蛙<rt>かわず</rt></ruby><ruby>飛<rt>と</rt></ruby>びこむ'
       zh: "青蛙一跃入水中"
     - text: "水の音"
+      ruby: '<ruby>水<rt>みず</rt></ruby>の<ruby>音<rt>おと</rt></ruby>'
       zh: "扑通一声响"
 
 - title: "閑さや"
@@ -89,10 +93,13 @@
   lang: "ja"
   lines:
     - text: "閑さや"
+      ruby: '<ruby>閑<rt>しずか</rt></ruby>さや'
       zh: "四下多寂静"
     - text: "岩にしみ入る"
+      ruby: '<ruby>岩<rt>いわ</rt></ruby>にしみ<ruby>入<rt>い</rt></ruby>る'
       zh: "蝉声阵阵透岩石"
     - text: "蝉の声"
+      ruby: '<ruby>蝉<rt>せみ</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>'
       zh: "渗入石中去"
 
 - title: "菜の花や"
@@ -100,10 +107,13 @@
   lang: "ja"
   lines:
     - text: "菜の花や"
+      ruby: '<ruby>菜<rt>な</rt></ruby>の<ruby>花<rt>はな</rt></ruby>や'
       zh: "遍野菜花黄"
     - text: "月は東に"
+      ruby: '<ruby>月<rt>つき</rt></ruby>は<ruby>東<rt>ひがし</rt></ruby>に'
       zh: "明月初升在东方"
     - text: "日は西に"
+      ruby: '<ruby>日<rt>ひ</rt></ruby>は<ruby>西<rt>にし</rt></ruby>に'
       zh: "落日正西沉"
 
 - title: "痩蛙"
@@ -111,10 +121,13 @@
   lang: "ja"
   lines:
     - text: "痩蛙"
+      ruby: '<ruby>痩蛙<rt>やせがえる</rt></ruby>'
       zh: "瘦弱小青蛙"
     - text: "まけるな一茶"
+      ruby: 'まけるな<ruby>一茶<rt>いっさ</rt></ruby>'
       zh: "千万不要认输啊"
     - text: "是にあり"
+      ruby: '<ruby>是<rt>これ</rt></ruby>にあり'
       zh: "一茶在这里"
 
 - title: "柿くへば"
@@ -122,8 +135,11 @@
   lang: "ja"
   lines:
     - text: "柿くへば"
+      ruby: '<ruby>柿<rt>かき</rt></ruby>くへば'
       zh: "方才吃柿子"
     - text: "鐘が鳴るなり"
+      ruby: '<ruby>鐘<rt>かね</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>るなり'
       zh: "忽闻钟声悠悠响"
     - text: "法隆寺"
+      ruby: '<ruby>法隆寺<rt>ほうりゅうじ</rt></ruby>'
       zh: "来自法隆寺"

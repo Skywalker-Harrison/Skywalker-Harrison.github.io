@@ -20,8 +20,8 @@
         <a class="brand" href="{{ site.baseurl }}/"><img class="brand-logo" src="{{ site.baseurl }}/img/jl-logo.svg" alt="" width="28" height="28">{{ p.name }}</a>
         <nav>
             <a href="#about">About</a>
-            {% if p.news.size > 0 %}<a href="#news">News</a>{% endif %}
             {% if p.publications.size > 0 %}<a href="#publications">Publications</a>{% endif %}
+            {% if p.news.size > 0 %}<a href="#news">News</a>{% endif %}
             <a href="{{ site.baseurl }}/poems/">Poems</a>
             <a href="{{ site.baseurl }}/blog/">Blog</a>
         </nav>
@@ -65,17 +65,6 @@
             </ul>
             {% endif %}
         </section>
-
-        {% if p.news.size > 0 %}
-        <section id="news">
-            <h2>News</h2>
-            <ul class="rows">
-                {% for n in p.news %}
-                <li><span class="when">{{ n.date }}</span><span class="what">{{ n.text }}</span></li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endif %}
 
         {% if p.publications.size > 0 %}
         {% assign me_bold = p.me | prepend: '<strong>' | append: '</strong>' %}
@@ -210,6 +199,17 @@
                 {% endfor %}
             </ul>
             <p class="more"><a href="{{ site.baseurl }}/blog/">All posts →</a></p>
+        </section>
+        {% endif %}
+
+        {% if p.news.size > 0 %}
+        <section id="news">
+            <h2>News</h2>
+            <ul class="rows">
+                {% for n in p.news %}
+                <li><span class="when">{{ n.date }}</span><span class="what">{{ n.text }}</span></li>
+                {% endfor %}
+            </ul>
         </section>
         {% endif %}
     </main>

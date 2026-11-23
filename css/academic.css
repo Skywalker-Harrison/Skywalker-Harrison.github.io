@@ -144,6 +144,7 @@ section h3 { font-size: 15px; margin: 26px 0 10px; }
 .poem-lines { border-left: 3px solid var(--accent); padding-left: 20px; }
 .poem-line { margin: 0 0 14px; }
 .poem-line span { display: block; }
+.poem-line.stanza { margin-top: 34px; }
 .poem-line > span:first-child { font: 19px/1.6 Georgia, "Times New Roman", "Songti TC", "Songti SC", "Noto Serif CJK TC", "PMingLiU", serif; }
 .poem[hidden], .poem-more[hidden], .poem-langs[hidden] { display: none; }
 .poem-langs { display: flex; flex-wrap: wrap; gap: 8px; margin: -16px 0 36px; }
